@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Peter Wu</title>
+</head>
+    
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Peter Wu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/projects">Projects</a>
+                </li>  
+            </ul>
+        </div>
+    </nav> 
+    
+</body>
+</html>
+
+<div class = "container">
+    
+    <h1 align="center">Projects</h1>
+    <hr>
+
+    <h2><a href = "https://operations.nfl.com/the-game/big-data-bowl/2019-big-data-bowl/"><i>2019 NFL Big Data Bowl – College Track Finalist</i></a></h2>
+    <h2>DIRECT: A Two-Level System for Defensive Pass
+    Interference Rooted in Repeatability, Enforceability, Clarity,
+    and Transparency</h2>
+
+    <p>For this project, we conducted an analysis of predicted catch probabilities to determine suitable rule proposal changes that would help improve the game. We analyzed about 6,000 catch plays from the sample of 91 games provided as a part of the Big Data Bowl. We built a multiple logistic regression model
+    to help us predict catch probability statistics if we had altered the predictors we used, like the different pass lengths of each play. By filtering catch probability plays by the type of penalty called, we discovered various insights pertaining to how each penalty was being officiated, most notably the bimodal shape of the defensive pass interference (DPI) distributions. We hypothesized that this was because of differing standards for what a DPI entails. Through a detailed analysis of the data, we propose a novel “two-level” system for DPI which protects the officials on borderline calls:</p>
+    <ul>
+        <li>“Common Foul” penalty will be defined as a general PI call (holding receiver’s arms down, pushing,
+    etc.) where the defender was playing the ball and results in a 10-yard penalty.</li>
+        <li>“Flagrant Foul” penalty will be defined as a general PI call where the defender clearly was not
+    playing the ball and results in a spot foul.</li>
+    </ul>
+
+    <p>Click <a href = "https://operations.nfl.com/media/3667/big-data-bowl-cmu.pdf">here</a> to read the full paper.</p>
+
+    <hr>
+
+    <h2><i><a href = "https://bet-path-2021.appspot.com">BetPath – Machine Learning for Sports Betting</a></i></h2>
+
+    <p>This is an end-to-end machine learning project that scrapes, cleans, and wrangles data from popular Python sports packages including MLB-StatsAPI, nba_api, nflgame, and hockey_scraper and outputs optimal betting strategies for betting on the moneyline, spread (soon), and point total (soon) for the MLB, NBA, NFL, and NHL using Monte-Carlo simulation. Some features of this app include, but are not limited to: </p>
+
+    <div class = "row">
+        <img src="/static/images/mike-trout.png" alt="Mike Trout" style = "max-height: 400px; padding-left: 25px;">
+        <img src="/static/images/bar-chart.png" alt="Win Probabilities" style = "max-height: 300px; padding-left: 25px;">
+        <img src="/static/images/moneyline.png" alt="Monte-Carlo Analysis" style = "max-height: 350px; padding-left: 25px;">
+    </div>
+
+    <ul>
+        <li>Scrape moneylines, spreads, and point totals from bookmakers like Pinnacle and Bovada.</li>
+        <li>Better visualization of individual player statistics (currently only for MLB as of now).</li>
+        <li>Scraping injury reports for improved betting accuracy (currently only for NBA as of now).</li>
+        <li>Accounting for factors like home/road splits and rolling averages for team performance.</li>
+    </ul>
+
+    <hr>
+
+    <h2><a href = "https://arxiv.org/abs/1711.09308"><i>On the Evolution of Dark Matter Halo Properties Following Major and Minor Mergers</i></a></h2>
+    <h2>2017 Siemens Research Competition Semi-Finalist</h2>
+
+    <div class = "column">
+        <div align = "center" >
+            <img src="/static/images/halo-picture.png" alt="Halo Picture" style = "max-height: 325px;">
+        </div>
+    </div>
+
+    <p>We conducted an analysis on dark matter halo properties following major and minor mergers to advance our understanding of halo evolution. In this work, we analyzed ~80,000 dark matter halos from the Bolshoi-Planck cosmological simulation and studied halo evolution during relaxation after major mergers, those in which the merging mass ratio m/M > 0.3. We then applied a Gaussian filter to the property evolutions and characterized peak distributions, frequencies, and variabilities for several halo properties, including centering, spin, shape (prolateness), scale radius, and virial ratio. However, there were also halos that experienced relaxation without the presence of major mergers. We hypothesized that this was due to minor mergers unrecorded by the simulation analysis. By using property peaks to create a novel merger detection algorithm, we attempted to find minor mergers and match them to the unaccounted relaxed halos. Not only did we find evidence that minor mergers were the causes, but we also found similarities between major and minor merger effects, showing the significance of minor mergers for future studies. Through our dark matter merger statistics, we expect our work to ultimately serve as vital parameters towards better understanding galaxy formation and evolution.</p>
+
+    <p>Click <a href = "https://arxiv.org/abs/1711.09308">here</a> to read the full paper.</p>
+    
+</div>
+
+
+
+<hr>
+<p>&#169; Peter Wu 2020</p>
