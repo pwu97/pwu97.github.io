@@ -3,8 +3,16 @@ from flask import Flask, request, render_template, session, redirect, Response, 
 app = Flask(__name__)
 
 @app.route('/')
-def home_page():
-    return render_template('home.html')
+def index_page():
+    return render_template('index.html')
+
+@app.route('/data')
+def data_page():
+    return render_template('data.html')
+
+@app.route('/problems')
+def problems_page():
+    return render_template('problems.html')
 
 @app.route('/projects')
 def projects_page():
