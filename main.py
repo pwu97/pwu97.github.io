@@ -13,20 +13,6 @@ def data_page():
 @app.route('/problems')
 def problems_page():
     problems = [
-        {'lc_link': 'https://leetcode.com/problems/two-sum/',
-         'sol_link': 'https://github.com/ConcreteCS/Leetcode-Python-Solutions/blob/main/Problems/LC0001_twoSum.py',
-         'name': 'Two Sum',
-         'company': 'fb',
-         'number': 1,
-         'difficulty': 'Easy',
-         'topics': 'Array, Hash Table'},
-        {'lc_link': 'https://leetcode.com/problems/add-two-numbers/',
-         'sol_link': 'https://github.com/ConcreteCS/Leetcode-Python-Solutions/blob/main/Problems/LC0002_addTwoNumbers.py',
-         'name': 'Add Two Numbers',
-         'company': 'google',
-         'number': 2,
-         'difficulty': 'Medium',
-         'topics': 'Linked List, Math, Recursion'},
         {'lc_link': 'https://leetcode.com/problems/3sum/',
          'sol_link': '',
          'name': '3Sum',
@@ -99,7 +85,7 @@ def problems_page():
          'topics': 'Two Pointers, Design, Sorting, Heap, Data Stream'},
     ]
     
-    return render_template('problems.html', problems=problems)
+    return render_template('problems.html')
 
 @app.route('/projects')
 def projects_page():
