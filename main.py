@@ -13,13 +13,6 @@ def data():
 @app.route('/problems')
 def problems():
 #    problems = [
-#        {'lc_link': 'https://leetcode.com/problems/group-anagrams/',
-#         'sol_link': '',
-#         'name': 'Group Anagrams',
-#         'company': 'amazon',
-#         'number': 49,
-#         'difficulty': 'Medium',
-#         'topics': 'Hash Table, String, Sorting'},
 #        {'lc_link': 'https://leetcode.com/problems/valid-number/',
 #         'sol_link': '',
 #         'name': 'Valid Number',
