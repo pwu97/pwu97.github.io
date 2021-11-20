@@ -13,20 +13,6 @@ def data():
 @app.route('/problems')
 def problems():
 #    problems = [
-#        {'lc_link': 'https://leetcode.com/problems/valid-number/',
-#         'sol_link': '',
-#         'name': 'Valid Number',
-#         'company': 'fb',
-#         'number': 65,
-#         'difficulty': 'Hard',
-#         'topics': 'String'},
-#        {'lc_link': 'https://leetcode.com/problems/valid-palindrome/',
-#         'sol_link': '',
-#         'name': 'Valid Palindrome',
-#         'company': 'spotify',
-#         'number': 125,
-#         'difficulty': 'Easy',
-#         'topics': 'Two Pointers, String'},
 #        {'lc_link': 'https://leetcode.com/problems/happy-number/',
 #         'sol_link': '',
 #         'name': 'Happy Number',
