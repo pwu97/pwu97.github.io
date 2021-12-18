@@ -12,28 +12,15 @@ def data():
 
 @app.route('/problems')
 def problems():
-#    problems = [
-#        {'lc_link': 'https://leetcode.com/problems/happy-number/',
-#         'sol_link': '',
-#         'name': 'Happy Number',
-#         'company': 'twitter',
-#         'number': 202,
-#         'difficulty': 'Easy',
-#         'topics': 'Hash Table, Math, Two Pointers'},
-#        {'lc_link': 'https://leetcode.com/problems/find-median-from-data-stream/',
-#         'sol_link': '',
-#         'name': 'Find Median from Data Stream',
-#         'company': 'microsoft',
-#         'number': 295,
-#         'difficulty': 'Hard',
-#         'topics': 'Two Pointers, Design, Sorting, Heap, Data Stream'},
-#    ]
-    
     return render_template('problems.html')
 
 @app.route('/projects')
 def projects():
     return render_template('projects.html')
+
+@app.route('/resume')
+def resume():
+    return render_template('resume.html')
 
 @app.errorhandler(500)
 def server_error(e):
