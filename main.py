@@ -18,6 +18,14 @@ def problems():
 def projects():
     return render_template('projects.html')
 
+@app.route('/papers')
+def papers():
+    return render_template('papers.html')
+
+@app.route('/code')
+def code():
+    return render_template('code.html')
+
 @app.route('/resume')
 def resume():
     return render_template('resume.html')
