@@ -10,6 +10,10 @@ def index():
 def data():
     return render_template('data.html')
 
+@app.route('/companies')
+def companies():
+    return render_template('companies.html')
+
 @app.route('/problems')
 def problems():
     return render_template('problems.html')
